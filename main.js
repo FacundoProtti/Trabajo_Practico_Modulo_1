@@ -1,5 +1,5 @@
-import EndScene from "./scenes/Endscene.js";
 import Game from "./scenes/Game.js";
+import EndScene from "./scenes/Endscene.js";
 
 // Create a new Phaser config object
 const config = {

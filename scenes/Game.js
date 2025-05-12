@@ -9,14 +9,14 @@ export default class Game extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("Cielo", "assets/Cielo.webp");
-    this.load.image("Diamante", "assets/diamond.png");
-    this.load.image("Menu", "assets/FondoMenu.jpg");
-    this.load.image("Ninja", "assets/Ninja.png");
-    this.load.image("Plataforma", "assets/platform.png");
-    this.load.image("Cuadrado", "assets/square.png");
-    this.load.image("Triangulo", "assets/triangle.png");
-    this.load.image("Circulo", "assets/circle.png");
+    this.load.image("Cielo", "./public/assets/Cielo.webp");
+    this.load.image("Diamante", "./public/assets/diamond.png");
+    this.load.image("Menu", "./public/assets/FondoMenu.jpg");
+    this.load.image("Ninja", "./public/assets/Ninja.png");
+    this.load.image("Plataforma", "./public/assets/platform.png");
+    this.load.image("Cuadrado", "./public/assets/square.png");
+    this.load.image("Triangulo", "./public/assets/triangle.png");
+    this.load.image("Circulo", "./public/assets/circle.png");
   }
 
   createRandomShape() {
@@ -174,7 +174,7 @@ export default class Game extends Phaser.Scene {
       return;
     }
     if (typeof shape.valor === "number") {
-      shape.valor -= 2,5;
+      shape.valor -= 5;
       if (shape.valor <= 0) {
         shape.disableBody(true, true);
       }
