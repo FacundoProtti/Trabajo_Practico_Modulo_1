@@ -9,7 +9,7 @@ export default class EndScene extends Phaser.Scene {
   }
 
   Preload(){
-    this.load.image("Menu", "./public/assets/FondoMenu.jpg");
+    this.load.image("Menu", "assets/FondoMenu.jpg");
 
   }
 
